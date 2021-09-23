@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+    <title>Bootstrap Layouts</title>
+  </head>
+
+  <body>
+    <!-- 2 Row Format -->
+    <page class="row">
+      <!-- 1st row - side search bar -->
+      <nav class="col-4 search-bar">
+        <h2>Library Congress Search Engine</h2>
+
+        <!-- Form to run another search in Search Engine -->
+        <form>
+          <!-- Text input for searching -->
+          <input type="text" id="topic" name="topic" />
+
+          <!-- Drop down menu for format options -->
+          <select name="text-type" id="text-type">
+            <option value="select" class="text-option">
+              Select a format...
+            </option>
+            <option value="audio" class="text-option">Audio Recordings</option>
+            <option value="printed" class="text-option">
+              Printed Material
+            </option>
+            <option value="film" class="text-option">Films, Videos</option>
+            <option value="legislation" class="text-option">Legislation</option>
+            <option value="manuscript" class="text-option">Manuscripts</option>
+            <option value="maps" class="text-option">Maps</option>
+            <option value="music" class="text-option">Notated Music</option>
+            <option value="newspaper" class="text-option">Newspaper</option>
+            <option value="periodical" class="text-option">Periodicals</option>
+            <option value="narratives" class="text-option">
+              Personal Narratives
+            </option>
+            <option value="print" class="text-option">
+              Photos, Print, Drawings
+            </option>
+            <option value="software" class="text-option">Software</option>
+            <option value="web-archives" class="text-option">
+              Web Archives
+            </option>
+            <option value="web-pages" class="text-option">Web Pages</option>
+            <option value="3D" class="text-option">3D Objects</option>
+          </select>
+          <br />
+
+          <!-- Side bar search button -->
+          <button class="" id="search">Search</button>
+        </form>
+
+        <!-- Go Back Button - goes back to homepage -->
+        <button class="" id="go-back">Go back</button>
+      </nav>
+
+      <!-- 2nd row - showing the results -->
+      <section class="col-8 results-column">
+        <h3>Showing Results for [searched topic]</h3>
+        <ol class="results-list">
+          <li></li>
+        </ol>
+
+        <!-- create and apply a custom class name "custom-navbar" -->
+        <nav class="navbar navbar-expand-lg custom-navbar">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="#">Home</a>
+              <a class="nav-item nav-link" href="#">Features</a>
+              <a class="nav-item nav-link" href="#">Pricing</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- create an apply a custom class name "custom-jumbotron" -->
+        <section class="jumbotron jumbotron-fluid custom-jumbotron">
+          <div class="container">
+            <h1>Welcome to the site!</h1>
+            <p class="lead">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda optio expedita consequuntur odio nostrum alias id eius
+              distinctio, quaerat ullam mollitia error aliquam sunt delectus
+              molestias autem rerum dignissimos quidem.
+            </p>
+
+            <button class="btn btn-lg custom-btn">Learn more!</button>
+          </div>
+        </section>
+      </section>
+    </page>
+  </body>
+</html>
