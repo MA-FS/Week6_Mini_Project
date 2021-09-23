@@ -1,0 +1,10 @@
+html,
+body {
+    height: 100%;
+    background-color: dimgray;
+}
+
+.myForm {
+    background-color: gray;
+    border-radius: 20px;
+}
